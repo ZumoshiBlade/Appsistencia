@@ -1,0 +1,10 @@
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-toolbar, ion-card{
+    background-color: var(--ion-color-gray);
+}
+
