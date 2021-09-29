@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="gray">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/inicio']" ><ion-icon name="arrow-back-outline" slot="icon-only" color="light"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title color="light">Tu perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-card>
+    <img src="https://i1.sndcdn.com/avatars-3o9s6yS4pcD4J3vh-PAyrQg-t500x500.jpg" alt="">
+    <ion-item color="warning">
+      <ion-label>Nombre de usuario:</ion-label>
+      <ion-label>Juanito</ion-label>
+    </ion-item>
+    <ion-item color="warning">
+      <ion-label>RUT:</ion-label>
+      <ion-label>19.888.321-k</ion-label>
+    </ion-item>
+    <ion-button [routerLink]="['/lista-fechas']" expand="block" fill="clear">Administrar Fechas<ion-icon name="calendar-number-outline" class="ion-margin-start"></ion-icon></ion-button>
+  </ion-card>
+
+
+</ion-content>
+<app-footer></app-footer>

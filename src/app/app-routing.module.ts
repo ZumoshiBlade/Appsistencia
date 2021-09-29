@@ -19,6 +19,22 @@ const routes: Routes = [
     path: 'recuperacion',
     loadChildren: () => import('./pages/recuperacion/recuperacion.module').then( m => m.RecuperacionPageModule)
   },
+  {
+    path: 'usuario',
+    loadChildren: () => import('./pages/usuario/usuario.module').then( m => m.UsuarioPageModule)
+  },
+  {
+    path: 'lista-fechas',
+    loadChildren: () => import('./pages/lista-fechas/lista-fechas.module').then( m => m.ListaFechasPageModule)
+  },
+  {
+    path: 'fecha',
+    loadChildren: () => import('./pages/fecha/fecha.module').then( m => m.FechaPageModule)
+  },
+  {
+    path: 'fecha/edit/:id',
+    loadChildren: () => import('./pages/fecha/fecha.module').then( m => m.FechaPageModule)
+  }
 ];
 
 @NgModule({

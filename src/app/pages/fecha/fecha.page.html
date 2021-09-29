@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="gray">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/lista-fechas']" ><ion-icon name="arrow-back-outline" slot="icon-only" color="light"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title color="light">{{editing ? 'Actualizar' : 'Agendar'}} fecha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="light">Ingresa una fecha y descripción</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Fecha</ion-label>
+        <ion-datetime value="2021-02-20" placeholder="Select Date" [(ngModel)]=date.fecha></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Descripción</ion-label>
+        <ion-input [(ngModel)]=date.descripcion></ion-input>
+      </ion-item>
+      <ion-button expand="block" color="success" class="ion-margin-top" (click)="editing ? updateDate() : saveDate()">{{editing ? 'Modificar' : 'Guardar'}}</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<app-footer></app-footer>

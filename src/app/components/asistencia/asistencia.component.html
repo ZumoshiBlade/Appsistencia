@@ -1,0 +1,12 @@
+<ion-card *ngIf="listaAsignaturas">
+    <ion-item lines="full" color="dark" *ngFor="let aux of listaAsignaturas">
+      <ion-label>
+          <p>{{aux.nombre}}:</p>
+      </ion-label>
+      <ion-label slot="end">{{aux.porcentaje}}</ion-label>
+    </ion-item>
+</ion-card>
+
+
+
+

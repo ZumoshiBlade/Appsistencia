@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="gray">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/usuario']" ><ion-icon name="arrow-back-outline" slot="icon-only" color="light"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title color="light">Tus fechas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-list color="gray">
+    <ion-item *ngFor="let aux of fechas" color="gray">
+      <ion-icon name="calendar-sharp" class="ion-margin-end"></ion-icon>
+      <ion-label>{{aux.descripcion}}</ion-label>
+      <ion-button [routerLink]="['/','fecha','edit', aux.id]"  expand="block" fill="clear" color="secondary">Actualizar</ion-button>
+      <ion-button (click)="deleteFecha(aux.id)" expand="block" fill="clear" color="danger">Eliminar</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" [routerLink]="['/fecha']">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+<app-footer></app-footer>
