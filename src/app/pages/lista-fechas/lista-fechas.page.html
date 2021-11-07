@@ -3,11 +3,11 @@
     <ion-buttons slot="start">
       <ion-button [routerLink]="['/usuario']" ><ion-icon name="arrow-back-outline" slot="icon-only" color="light"></ion-icon></ion-button>
     </ion-buttons>
-    <ion-title color="light">Tus fechas</ion-title>
+    <app-header [pageTitle]="titulo" [centrado]="center"></app-header>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="dark">
+<ion-content>
   <ion-list color="gray">
     <ion-item *ngFor="let aux of fechas" color="gray">
       <ion-icon name="calendar-sharp" class="ion-margin-end"></ion-icon>

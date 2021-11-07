@@ -13,6 +13,7 @@ export class FechaPage implements OnInit {
     fecha: '',
     descripcion: ''
   }
+
   constructor(private fechasService: FechasService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {

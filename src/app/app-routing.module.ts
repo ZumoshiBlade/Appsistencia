@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'fecha/edit/:id',
     loadChildren: () => import('./pages/fecha/fecha.module').then( m => m.FechaPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   }
 ];
 

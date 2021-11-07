@@ -7,7 +7,8 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./lista-fechas.page.scss'],
 })
 export class ListaFechasPage{
-
+  titulo="LISTA FECHAS";
+  center="ion-text-start"
   fechas: any = []
 
   constructor(private fechasService: FechasService, private alertController: AlertController) { }

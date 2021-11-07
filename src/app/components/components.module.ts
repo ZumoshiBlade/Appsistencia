@@ -3,10 +3,14 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FooterComponent } from './footer/footer.component';
 import { AsistenciaComponent } from './asistencia/asistencia.component'
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   declarations:[FooterComponent, 
-                AsistenciaComponent
+                AsistenciaComponent, 
+                HeaderComponent
+                
   ],
   imports: [
     CommonModule,
@@ -14,7 +18,9 @@ import { AsistenciaComponent } from './asistencia/asistencia.component'
   ],
   exports: [
     FooterComponent, 
-    AsistenciaComponent
+    AsistenciaComponent,
+    HeaderComponent
+    
   ]
 })
 export class ComponentsModule { }

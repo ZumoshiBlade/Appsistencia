@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./usuario.page.scss'],
 })
 export class UsuarioPage implements OnInit {
-
+  center="ion-text-start";
+  titulo="TU PERFIL";
   constructor() { }
 
   ngOnInit() {
