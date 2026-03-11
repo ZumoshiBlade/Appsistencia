@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(cd \"C:/Projects/Appsistencia/Appsistencia\" && rm -f package-lock.json && rm -rf node_modules && npm install 2>&1)",
+      "Bash(cd \"C:/Projects/Appsistencia/Appsistencia\" && npx ng build 2>&1)"
+    ]
+  }
+}

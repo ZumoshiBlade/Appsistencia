@@ -14,12 +14,12 @@
     </ion-card-header>
     <ion-card-content>
       <ion-item>
-        <ion-label>Fecha</ion-label>
-        <ion-datetime value="2021-02-20" placeholder="Select Date" [(ngModel)]=date.fecha></ion-datetime>
+        <ion-label position="stacked">Fecha</ion-label>
+        <ion-input type="date" [(ngModel)]="date.fecha"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Descripción</ion-label>
-        <ion-input [(ngModel)]=date.descripcion></ion-input>
+        <ion-input [(ngModel)]="date.descripcion"></ion-input>
       </ion-item>
       <ion-button expand="block" color="success" class="ion-margin-top" (click)="editing ? updateDate() : saveDate()">{{editing ? 'Modificar' : 'Guardar'}}</ion-button>
     </ion-card-content>
